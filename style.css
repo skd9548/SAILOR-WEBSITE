@@ -340,3 +340,194 @@ footer {
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0); }
 }
+/* =========================
+   PREMIUM NAVBAR
+========================= */
+
+header {
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 44px;
+  z-index: 999;
+}
+
+.navbar {
+  width: 90%;
+  margin: auto;
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0b0f19;
+  letter-spacing: 1px;
+}
+
+/* NAV LINKS */
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* HOVER LINE EFFECT */
+nav a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: orange;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+/* =========================
+   HERO PREMIUM LOOK
+========================= */
+
+.hero {
+  min-height: 85vh;
+  background: #f8fafc;
+  border-radius: 20px;
+  margin: 30px;
+  padding: 70px 50px;
+}
+
+.hero-text h1 {
+  font-size: 52px;
+  line-height: 1.2;
+  color: #0b0f19;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* BUTTON PREMIUM */
+button {
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(255,136,0,0.15);
+}
+
+/* =========================
+   CARD PROFESSIONAL
+========================= */
+
+.card {
+  border: 1px solid #eee;
+  background: white;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #0b0f19;
+}
+
+.card p {
+  line-height: 1.6;
+}
+
+/* =========================
+   FOOTER PRO LOOK
+========================= */
+
+footer {
+  padding: 50px 20px;
+  background: #050816;
+  color: white;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+/* =========================
+   SECTION SPACING
+========================= */
+
+.programs,
+.why,
+.options,
+.reviews {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* =========================
+   MOBILE POLISH
+========================= */
+
+@media(max-width:768px){
+
+  .hero {
+    margin: 15px;
+    padding: 40px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  nav {
+    padding-bottom: 15px;
+  }
+}
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 26px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  z-index: 9999;
+  transition: 0.3s;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+}
+.cta-strip {
+  background: linear-gradient(90deg, #ff7a00, #ffb347);
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+}
+
+.cta-strip h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
