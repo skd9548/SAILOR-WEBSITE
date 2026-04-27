@@ -19,52 +19,65 @@ nav {
 }
 
 /* 🔥 MOBILE VIEW */
-@media(max-width:768px){
+@media (max-width: 768px) {
 
   .menu-toggle {
     display: block;
+    font-size: 34px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
   }
 
   nav {
     display: none;
     flex-direction: column;
-    background: #111;
     width: 100%;
-    margin-top: 10px;
+    background: white;
+    margin-top: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  }
+  nav a {
+    color: #111;
+    text-decoration: none;
+    padding: 18px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+    background: white;
+    transition: 0.3s;
   }
 
-  nav a {
-    padding: 10px;
-    border-top: 1px solid #333;
+  nav a:hover {
+    background: #fff5e6;
+    color: orange;
   }
-}
+
+
 
 /* HERO */
 .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 40px;
-}
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
 
-.hero-text {
-  max-width: 500px;
-}
+  .hero-text h1 {
+    font-size: 36px;
+  }
 
-.hero-text h1 {
-  font-size: 42px;
-}
-
-.hero-text p {
-  margin: 15px 0;
-  color: gray;
-}
-
-.hero-img img {
-  width: 380px;
-  border-radius: 15px;
-  animation: float 3s ease-in-out infinite;
-}
+  .hero-img img {
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 16px;
+  }
 
 /* BUTTONS */
 button {
@@ -117,21 +130,14 @@ button:hover {
 
 /* WHY SECTION */
 .why {
-  display: flex;
-  justify-content: space-between;
-  padding: 50px;
-  background: #0b0f19;
-  color: white;
-  align-items: center;
-  flex-wrap: wrap;
-}
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
 
 .price-box {
-  background: white;
-  color: black;
-  padding: 25px;
-  border-radius: 12px;
-  text-align: center;
+    margin-top: 25px;
+  }
 }
 
 /* OPTIONS */
